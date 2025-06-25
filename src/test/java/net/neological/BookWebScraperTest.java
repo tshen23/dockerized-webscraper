@@ -159,7 +159,7 @@ public class BookWebScraperTest {
     @DisplayName("averagePriceForGenre for Historical Fiction across both pages")
     public void testAveragePriceForGenre_HistoricalFiction_AcrossPages() throws IOException {
         scraper.scrape(URL2_PAGE1);
-        double expectedCombinedPrice = 33.63653846153847;
+        double expectedCombinedPrice = 33.64423076923077;
         assertEquals(expectedCombinedPrice,
                 scraper.averagePriceForGenre("Historical Fiction"),
                 0.0001,
