@@ -163,7 +163,7 @@ public class BookWebScraperTest {
         assertEquals(expectedCombinedPrice,
                 scraper.averagePriceForGenre("Historical Fiction"),
                 0.0001,
-                "Expected combined avg price ≈33.63654 across pages for Historical Fiction");
+                "Expected combined avg price ≈33.64423 across pages for Historical Fiction");
     }
 
     @Test
