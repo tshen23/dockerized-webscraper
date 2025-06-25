@@ -1,8 +1,5 @@
 # Java Unit Tests Base Template
 
-A dockerized Java template for running unit tests with Maven and JUnit.
-
-**⚠️ Important Note**: This repository contains a mock Todo application for demonstration purposes only. You should replace the example code with your own Java application while maintaining the same project structure and testing setup.
 
 ## Project Structure
 
@@ -66,12 +63,6 @@ A dockerized Java template for running unit tests with Maven and JUnit.
    mvn exec:java -Dexec.mainClass="your.package.YourMainClass"  # Run app
    ```
 
-## Template Overview
-
-**This is a Template - Replace with Your Code!**
-
-This template provides the essential structure and configuration files for a Java project with unit testing. **You should replace the example code with your own Java application** while maintaining the project structure.
-
 ### Required Template Structure
 
 Keep these key files and structure for your project:
@@ -105,3 +96,33 @@ Keep these key files and structure for your project:
    - Add any additional dependencies your project needs
 
 **Important**: Keep the template files (`Dockerfile`, `build_docker.sh`, `run_tests.sh`, `pom.xml`) but update their content as needed for your project.
+
+# Running Normally
+
+
+## Install Maven
+Download Maven:
+- Go to https://maven.apache.org/download.cgi
+- Unzip it somewhere like C:\Program Files.
+
+Add mvn to your PATH:
+- Open Windows Settings → “Environment Variables.”
+- Under “System variables,” find and select Path → Edit → New.
+- Paste the Maven bin folder (for example):
+
+```
+C:\Program Files\maven-mvnd-1.0.2-windows-amd64\mvn\bin
+```
+- Click OK on all dialogs to save.
+
+## Compile
+
+Open a terminal in the project root directory and run:
+mvn clean package
+
+This will produce `target/dockerized-webscraper-1.0.0.jar`.
+
+## Run
+
+After building, execute:
+java -jar target/dockerized-webscraper-1.0.0.jar
