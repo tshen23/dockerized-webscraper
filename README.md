@@ -1,4 +1,4 @@
-# Java Unit Tests Base Template
+# Java Unit Tests
 
 
 ## Features
